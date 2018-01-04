@@ -1,0 +1,97 @@
+/* styles.css */
+html,
+
+body {
+	height: 100%
+} 
+
+/* cover */
+
+#cover {
+	background: #222 url('img/Karneval02.png') center center no-repeat;
+	background-size: cover;
+	color: white;
+    height: 100%;
+	text-align: center; 
+	display: flex;
+	align-items: center;
+
+} 
+
+#cover-caption{
+  width: 100%;
+  text-align: center center no-repeat;
+}
+
+
+.section-content{
+	padding: 2.5rem 0; 
+
+}
+
+
+#about {
+	background: url('img/Karneval2010051.png') center center no-repeat;
+	background-size: cover;
+}
+
+.about-text{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 1.875rem;
+}
+
+#footer-main{
+	background: #222;
+	color: white;
+	font-size: 0.8rem;
+	padding: 2rem 0; 
+}
+.container{
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+.container{
+	margin-left: 5px;
+}
+
+#news {
+float: right;
+
+}
+
+#gameplay-baseball-field {
+	padding-right: 10px;
+	padding-left: 10px;
+  }
+  .card-img-top{
+	  height: 400px;
+	
+  }
+
+  .card-img-bottom{
+	  height: 400px;
+  }
+
+  .container-fluid-ansök{
+	  padding: 1.5rem;
+	  padding-right: 10px;
+	  padding-left: 10px;
+	  width: 600px;
+	  margin-left: 2px;
+  }
+
+  .funktionär-ansök{
+	  padding-top: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
