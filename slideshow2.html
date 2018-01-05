@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Slideshow Test</title>
+
+    <style>
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; }
+
+
+div#slider { 
+    width: 30%;
+    overflow: hidden;
+    padding-top: 10px;
+   /* margin: 30px auto; */
+   margin-left: 1rem;
+  
+}
+
+div#slider figure img{ 
+    width: 20%; float: left; 
+}
+div#slider figure{ 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite linear; 
+}
+
+    </style>
+</head>
+<body>
+        <div id="slider">
+        <figure>
+        <img src="tåget/rsz_karneval2010035.jpg" alt>
+        <img src="tåget/rsz_karneval2010040.jpg" alt>
+        <img src="tåget/rsz_karneval2010049.png" alt>
+        </figure>
+        </div>
+    
+
+</body>
+</html>

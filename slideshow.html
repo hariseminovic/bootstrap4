@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>Web Zone Css slider</title>
+
+    <style>
+
+body{
+  margin: 20px;
+}
+#carousel{
+  overflow: hidden;
+  width: 500px;
+  height: 333px;
+  border: 1px solid #333;
+}
+
+.panels{
+  margin: 0;
+  padding: 0;  
+}
+
+.panel{
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.panel img{
+}
+
+
+    </style>
+</head>
+<body>
+
+    <script>
+        
+        
+        (function ($) {
+"use strict";
+
+  var panels_wrapper = '#carousel', //panels wrapper with overflow hidden
+      panels = '.panels', //panel container
+      panel = '.panel',
+      currentPage = 1,
+      counterPage = 1,
+      singleWidth = 500, //your panel width
+      pages = 5, //total number of panels before cloning
+      gotoPage; //function to go to a page
+
+  $(document).ready(function () {
+    //clone last before
+    $('#carousel .panel:first').before($('#carousel .panel:last').clone());
+    //clone first after
+    $('#carousel .panel:last').after($($('#carousel .panel')[1]).clone());
+    //define panels width, the width of all panes
+    $(panels).width($(panel).length * singleWidth);
+    //Set the left position to the first 'real' item
+    $(panels_wrapper).scrollLeft(singleWidth);
+    
+    setInterval(function(){
+      counterPage++;
+      if(counterPage > pages + 1)
+        counterPage = 2;
+      gotoPage(counterPage);
+    }, 2500);
+  });
+
+  gotoPage = function(page) {
+    var dir = page < currentPage ? -1 : 1, //defines if goes left or right
+        n = Math.abs(currentPage - page),
+        left = singleWidth * dir * n;
+
+    $(panels_wrapper).filter(':not(:animated)').animate({
+     scrollLeft : '+=' + left
+    }, 500, function () {
+      if(page == 0){
+         $(panels_wrapper).scrollLeft(singleWidth *  pages);
+         page = pages;
+      } else if (page > pages) {
+         $(panels_wrapper).scrollLeft(singleWidth);
+         page = 1;
+      }
+      currentPage = page;
+      console.log(currentPage);
+   });
+  }
+
+}(jQuery));
+        
+        </script>
+
+        <div id="carousel">
+                <ul class="panels">
+                  <li class="panel">
+                    <img src="tåget/rsz_karneval2010035.jpg" alt="" />
+                  </li>
+                  <li class="panel">
+                    <img src="tåget/rsz_karneval2010040.jpg" alt="" />
+                  </li>
+                  <li class="panel">
+                    <img src="tåget/rsz_karneval2010049.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+</body>
+</html>
