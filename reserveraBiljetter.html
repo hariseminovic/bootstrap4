@@ -1,52 +1,128 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<title>Reservera biljetter</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles_1.css">
+    <script src="carousel.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Merriweather|Rochester" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="C:\Users\Haris Eminovic\Desktop\bootstrap4\bower_components\bootstrap\dist\css\styles_1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--
+    <link href="css/styles_1.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_1.css">
 
-	<!-- Custom CSS -->
+    -->
 
-	<link rel="stylesheet" href="styles.css">
+    <!-- color scheme http://www.colorcombos.com/color-scheme-7626.html -->
+    <title></title>
+  </head>
+  <body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index_1.html">Reservera biljetter</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index_1.html">Hem</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bli karnevalist<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ansök.html">Ansök</a></li>
+                  <li><a href="sektioner.html">Sektioner</a></li>
+                  <li><a href="administerIT.html">AdministerIT</a></li>
+                  <li><a href="biljonsen.html">Biljonsen</a></li>
+                  <li><a href="blädderiet.html">Blädderiet</a></li>
+                  <li><a href="dansen.html">Dansen</a></li>
 
-</head>
-<body>
-
-        <nav class="navbar navbar-dark bg-inverse navbar-full" id="nav-main">
-
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="bliKarnevalist.html">Bli karnevalist<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="omKarnevalen.html">Om karnevalen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reserveraBiljetter.html">Reservera biljetter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gästbok.html">Gästbok</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Hem</a>
-                    </li>
                 </ul>
-                <form class="form-inline pull-xs-right">
-                    <input class="form-control" type="text" placeholder="Sök">
-                    <button class="btn btn-success-outline" type="submit">Sök</button>
-                </form>
-            </nav>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Om karnevalen<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="nöjen.html">Nöjen</a></li>
+                    <li><a href="artister.html">Artister</a></li>
+                    <li><a href="tåget.html">Tåget</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="hittaHit.html">Hitta hit</a></li>
+  
+                  </ul>
+                </li>
+            <li><a href="#">Reservera biljetter</a></li>
+           
+          </ul>
+        </div> <!--/nav-collapse-->
+      </div>
+    </div>
 
-    <p>Reservera biljetter</p>
-   
+    <div class="container-fluid col-md-4">
+    <div class="row-fluid">
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="img/Karneval2010023.jpg">
+                        <div class="carousel-caption">
+                            <h4>First label</h4>
+                            <p>A working Bootstrap carousel example.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <img src="img/Karneval2010024.jpg">
+                        <div class="carousel-caption">
+                            <h4>Second label</h4>
+                            <p>This is the second slide text.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Karneval2010025.jpg">
+                        <div class="carousel-caption">
+                            <h4>Third label</h4>
+                            <p>Take note of the 'active' and 'slide' classes.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            </div>
+            
+            </div>
+            </div>
+
+    
+<!--Fixed footer-->
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="navbar-text pull-left">
+                <p>© Lundakarnevalen 2018.</p>
+            </div>
+            <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
 
 
     </body>
     </html>
+    

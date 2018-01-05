@@ -120,21 +120,34 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
+
 .aside{
-    display: block;
-	float: right;
-	height: 130%;
+    display: block; 
+	float: right; 
+	height: 130%; 
 	width: 30%;
 	overflow: auto;
 }
 
-.section {
-    /*display: block; */
-	float: left;
-	/*height: 100%;*/
-	/*width: 30%;*/
-	overflow: auto;
-	
+
+
+
+.main {
+    display: block; 
+	height: 130%; 
+	width: 100%;
+    overflow: auto;
+    align-items: center;
+   
+}
+
+.om{
+    display: block; 
+	height: 130%; 
+	width: 30%;
+    overflow: auto;
+    align-items: center;
+    padding-left: 200px;
 }
 
 .carousel-inner{
@@ -160,9 +173,9 @@ h1, h2, h3, h4, h5, h6 {
 #shoo{
     padding-left: 100px;
 }
-.jumbotron{
-	background-image: url("img/Karnevalen06 59.jpg");
-	background-size: cover;
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 
