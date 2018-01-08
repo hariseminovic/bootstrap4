@@ -130,21 +130,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.main {
-    display: block; 
-	height: 130%; 
-	width: 100%;
-    overflow: auto;
-    align-items: center;
-   
-}
-
 .section{
     display: block; 
 	float: left; 
 	height: 130%; 
 	width: 30%;
-	overflow: auto;
+    overflow: auto;
 }
 
 .om{
@@ -166,9 +157,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 43px;
 }
 
-.form-horizontal{
-   /*padding-right: 600px; */
-}
+
 
 #map {
     height: 500px; 
