@@ -93,19 +93,24 @@ h1, h2, h3, h4, h5, h6 {
 .home-thumb img:hover{
     transform: scale(1.1); 
 }
+
+
 .thumbnail img{
     transition: all 0.3s ease 0s;
     width: 100%;
 }
+
+
+
 .thumbnail {
     overflow: hidden;
 }
+
 
 .form {
    padding-top: 1.5rem;
    padding-bottom: 10px; 
 }
-
 
 .bg-grey{
     background-color: #f9f9f9;
@@ -113,10 +118,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-circle{
     border-radius: 50%;
-}
-
-.carousel-inner{
-    margin-bottom: 20px;
+    height: 250px; 
+    width: 250px;
+    
 }
 
 .aside{
@@ -136,8 +140,19 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
 }
 
-.om{
+    .om{
     height: 100%; 
+    }
+
+    .cardo{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .card{
+    padding-left: 45px;
+
 }
 
 .carousel-inner{
@@ -150,14 +165,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 43px;
 }
 
-#map {
-    height: 500px; 
-    width: 50%;
+div#map {
+    height: 600px; 
+    width: 100%;
 
-}
-
-#shoo{
-    padding-left: 100px;
 }
 
 .carousel-inner > .item > img {
@@ -181,15 +192,21 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 10px; 
 }
 
-.card{
-    padding-left: 40px;
-}
 
-.jumbotron{
 
-  background-image: url("img/Karneval2010031.jpg") center center no-repeat;
+/*
+.jumbotron {
+
+  background-image: url('../img/Karneval2010031.jpg') center center no-repeat;
   background-size: cover;
   color: white;
+}
+
+*/
+
+.container-fluid{
+    padding: 0; 
+    background-image: url('img/Karneval2010031.jpg') center center no-repeat;
 }
 
 @keyframes slidy {
@@ -226,4 +243,31 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 0;
       animation: 30s slidy infinite linear; 
     }
+
+    .card-img-top{
+        padding-top: 10px;
+    }
+
+    .embed-responsive{
+        padding-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .panel-title{
+        text-align: center;
+    }
+
+    .card-title{
+       text-align: center;
+    }
+
+    .card-block h4{
+        text-align: left;
+    }
+
+
+
+
 
