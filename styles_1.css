@@ -101,7 +101,6 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-
 .form {
    padding-top: 1.5rem;
    padding-bottom: 10px; 
@@ -119,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-inner{
     margin-bottom: 20px;
 }
-
 
 .aside{
     display: block; 
@@ -139,12 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .om{
-    display: block; 
-	height: 130%; 
-	width: 30%;
-    overflow: auto;
-    align-items: center;
-    padding-left: 200px;
+    height: 100%; 
 }
 
 .carousel-inner{
@@ -156,8 +149,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 37px;
     padding-left: 43px;
 }
-
-
 
 #map {
     height: 500px; 
@@ -190,4 +181,49 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 10px; 
 }
 
+.card{
+    padding-left: 40px;
+}
+
+.jumbotron{
+
+  background-image: url("img/Karneval2010031.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; }
+    
+    
+    div#slider { 
+        width: 100%;
+        overflow: hidden;
+        padding-top: 10px;
+        margin-left: 1rem;
+    }
+    
+    div#slider figure img{ 
+        width: 20%; float: left; 
+    }
+    div#slider figure{ 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite linear; 
+    }
 
