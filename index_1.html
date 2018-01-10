@@ -5,8 +5,9 @@
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="styles_1.css">
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script src="slideshow.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" > 
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Merriweather|Rochester" rel="stylesheet">
     <link href="C:\Users\Haris Eminovic\Desktop\bootstrap4\bower_components\bootstrap\dist\css\styles_1.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -93,22 +94,22 @@
 
         <div class="section col-sm-4">
             <h2>Tåget</h2>
-            <div id="slider">
-              <figure>
-              <img src="tåget/rsz_karneval2010035.jpg" alt>
-              <img src="tåget/rsz_karneval2010040.jpg" alt>
-              <img src="tåget/rsz_karneval2010049.png" alt>
-              </figure>
+            <div class="slider" id="main-slider"><!-- outermost container element -->
+              <div class="slider-wrapper"><!-- innermost wrapper element -->
+                <img src="tåget/rsz_karneval2010035.jpg" alt="First" class="slide" /><!-- slides -->
+                <img src="tåget/rsz_karneval2010040.jpg" alt="Second" class="slide" />
+                <img src="tåget/rsz_karneval2010049.png" alt="Third" class="slide" />
               </div>
+            </div>
 
             <h2>Karnevalister</h2>
-            <div id="slider">
-              <figure>
-              <img src="karnevalister/rsz_1rsz_karnevalen06_14.jpg" alt>
-              <img src="karnevalister/rsz_karnevalen06_83.jpg" alt>
-              <img src="karnevalister/rsz_karnevalen06_86.jpg" alt>
-              </figure>
+            <div class="slider" id="main-slider2"><!-- outermost container element -->
+              <div class="slider-wrapper"><!-- innermost wrapper element -->
+                <img src="karnevalister/rsz_1rsz_karnevalen06_14.jpg" alt="First" class="slide" /><!-- slides -->
+                <img src="karnevalister/rsz_karnevalen06_83.jpg" alt="Second" class="slide" />
+                <img src="karnevalister/rsz_karnevalen06_86.jpg" alt="Third" class="slide" />
               </div>
+            </div>
         </div>
 
                         <div class="main">
@@ -116,7 +117,7 @@
                           <h2 align="center">Nyheter</h2>
                         <div class="col-sm-12">
                           <div class="card">
-                              <img class="card-img-top" src="img/Karnevalen2018Poster.jpg" alt="Card image cap">
+                             <!-- <img class="card-img-top" src="img/Karnevalen2018Poster.jpg" alt="Card image cap"> -->
                               <h4 class="card-title">Affischen för Lundakarnevalen är släppt!</h4>
                               <p class="card-text"> Affischen valdes genom en tävling, som har varit öppen för allmänheten att skicka in bidrag till.
                                   Tävlingen startades i samband med att temat för Lundakarnevalen 2018 släpptes, vilket är Imaginalkarneval. I årets tävling kom fler bidrag in än någonsin,
@@ -139,7 +140,6 @@
                                     <p class="card-text"> Affischen valdes genom en tävling, som har varit öppen för allmänheten att skicka in bidrag till.
                                         Tävlingen startades i samband med att temat för Lundakarnevalen 2018 släpptes, vilket är Imaginalkarneval. I årets tävling kom fler bidrag in än någonsin,
                                         men i oktober lyckades karnevalskommittén unisont välja ett bidrag!</p>
-                                    <a href="#" class="btn btn-primary">Årets tävlingar</a>
                                   </div>
                                 </div>
                             </div>
@@ -163,14 +163,6 @@
                 </a>
             <h3>Teater</h3>
             <p>Under Lundakarnevalen 2018 kommer över trettio olika scenföreställningar att äga rum. Dessa kommer att arrangeras av bland annat Lundaspexarna, Lunds Teatersällskap och Malmö Teater. </p>
-           
-          </div>
-          <div class="col-sm-12">
-              <a href="#" class="thumbnail home-thumb">
-                  <img src="img/Karnevalen06 03.jpg" alt="Karnevalen 2006">
-                </a>
-            <h3>Barnevalen</h3>
-            <p>Föreställningen bjuder på färgglada scener och flertalet svängiga sång- och dansnummer. Stämningen är på topp och skådespelet händelserikt. Publiken är med på replikerna och intresset hålls skickligt uppe. De man möjligen tappar är barnen.</p>
             <a href="nöjen.html" class="btn btn-danger">Gå till nöjen</a>
             <a href="tåget.html" class="btn btn-danger">Mer om Karnevaltåget</a>
           </div>
@@ -182,7 +174,7 @@
                 <p>© Lundakarnevalen 2018.</p>
             </div>
             <div class="navbar-text pull-right">
-                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/Lundakarnevalen/"><i class="fa fa-facebook-square fa-2x"></i></a>
                 <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
             </div>   

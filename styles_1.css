@@ -194,8 +194,6 @@ div#map {
     bottom: 10px; 
 }
 
-
-
 /*
 .jumbotron {
 
@@ -211,40 +209,6 @@ div#map {
     background-image: url('img/Karneval2010031.jpg') center center no-repeat;
 }
 
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-    body { margin: 0; }
-    
-    
-    div#slider { 
-        width: 100%;
-        overflow: hidden;
-        padding-top: 10px;
-        margin-left: 1rem;
-    }
-    
-    div#slider figure img{ 
-        width: 20%; float: left; 
-    }
-    div#slider figure{ 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 30s slidy infinite linear; 
-    }
 
     .card-img-top{
         padding-top: 10px;
@@ -269,7 +233,59 @@ div#map {
         text-align: left;
     }
 
+    .card-block h4{
+        text-align: left;
+    }
 
+    .slider {
+    width: 100%;
+    height: 315px;
+    margin-left: 1rem;
+    padding-top: 10px;
+	
+}
 
+.slider-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
 
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s linear;
+}
 
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+.page-header p{
+    margin-top: 5px;
+}
+
+p{
+    padding-top: 6px;
+}
+
+.håkanhåkan{
+    height: 350px;
+    width: 400px;
+}
+
+table.table-bordered{
+    padding-left: 200px;
+}
+
+.train{
+    padding-top: 0.5rem;
+}
+
+.ansok{
+    margin-left: 8px;
+    width: 100%;
+}
